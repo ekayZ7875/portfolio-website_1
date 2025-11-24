@@ -58,6 +58,10 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      boxShadow: {
+        'glow-orange': '0 0 20px rgba(255, 153, 0, 0.3)',
+        'glow-orange-strong': '0 0 30px rgba(255, 153, 0, 0.5)',
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
