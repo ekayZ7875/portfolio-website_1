@@ -93,7 +93,7 @@ const ProfileSidebar = () => {
         {/* CTA Buttons */}
         <div className="w-full space-y-3 pt-4">
           <Button
-            className="w-full    font-semibold shadow-lg  transition-all duration-300"
+            className="w-full    font-semibold shadow-lg  transition-all duration-300 cursor-pointer"
             asChild
             onClick={handleClick}
           >
