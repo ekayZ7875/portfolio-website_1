@@ -7,6 +7,8 @@ const ProjectsSection = () => {
       title: "Pratibimb – AWS-Hosted Scalable Event & Payment Platform",
       url: "https://www.clubpratibimb.com",
       icon: "/pratibimb.png",
+      playstore: "https://play.google.com/store/apps/details?id=com.clubpratibimb.twa&pli=1",
+      playstoreIcon: "/play_store.png",
       tech: ["React", "Node.js", "Express", "PostgreSQL", "Docker", "AWS EC2", "S3", "CloudFront", "NGINX", "Jenkins", "GitHub Actions"],
       points: [
         "QR-based event ticketing & attendance to prevent ticket fraud",
@@ -29,16 +31,16 @@ const ProjectsSection = () => {
       ]
     },
     {
-    title: "AntiPhishX – AI-Powered Phishing Detection System",
-    url: "https://antiphishx.site",
-    icon: "/antiphish.png", // put this image in /public (rename if needed)
-    tech: ["React", "Express", "AWS EC2", "AWS S3", "CloudFront", "DynamoDB", "AWS Rekognition", "AWS Comprehend", "Kaggle ML Model"],
-    points: [
-  "AI-powered phishing detection that analyzes both text and images using OCR + NLP",
-  "AWS Rekognition extracts text from screenshots, and Comprehend performs NLP for threat analysis",
-  "Custom ML model aggregates signals to classify content as Phishing or Not Phishing, deployed on EC2 with S3 + CloudFront"
-]
-  }
+      title: "AntiPhishX – AI-Powered Phishing Detection System",
+      url: "https://antiphishx.site",
+      icon: "/antiphish.png", // put this image in /public (rename if needed)
+      tech: ["React", "Express", "AWS EC2", "AWS S3", "CloudFront", "DynamoDB", "AWS Rekognition", "AWS Comprehend", "Kaggle ML Model"],
+      points: [
+        "AI-powered phishing detection that analyzes both text and images using OCR + NLP",
+        "AWS Rekognition extracts text from screenshots, and Comprehend performs NLP for threat analysis",
+        "Custom ML model aggregates signals to classify content as Phishing or Not Phishing, deployed on EC2 with S3 + CloudFront"
+      ]
+    }
   ];
 
   return (
@@ -49,12 +51,26 @@ const ProjectsSection = () => {
         {projects.map((project, idx) => (
           <div key={idx} className="aws-card flex flex-col h-full">
             {/* Project Icon */}
-            <div className="w-16 h-16 rounded-lg  flex items-center justify-center mb-4 ">
+            <div className="flex items-center justify-between mb-4">
               <img
                 src={project.icon}
                 alt={project.title}
                 className="w-16 h-16 object-contain"
               />
+              {/* Play Store icon only for Pratibimb */}
+              {project.playstore && (
+                <a
+                  href={project.playstore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={project.playstoreIcon}
+                    alt="Play Store"
+                    className="w-12 h-12 object-contain hover:opacity-80 transition"
+                  />
+                </a>
+              )}
 
             </div>
 
