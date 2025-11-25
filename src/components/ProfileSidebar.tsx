@@ -1,7 +1,37 @@
 import { Github, Linkedin, ExternalLink, Download, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const RESUME_URL = "/Adarsh_Landge_Resume.pdf";
+const TRACKING_URL = "https://so6zlrzed4bsjtn5k4vinsh5pu0ldbsz.lambda-url.us-east-1.on.aws/";
+
+async function trackResumeDownload() {
+  try {
+    await fetch(TRACKING_URL, {
+      method: "POST",
+    });
+  } catch (error) {
+    console.error("Failed to track resume download:", error);
+  }
+}
+
+function downloadFile(url: string, filename: string) {
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
 const ProfileSidebar = () => {
+
+    const handleClick = async () => {
+    // fire & forget tracking
+    trackResumeDownload();
+    // trigger actual download
+    downloadFile(RESUME_URL, "Adarsh_Landge_Resume.pdf");
+  };
+
   return (
     <aside className="w-full lg:w-80 bg-sidebar border-r border-sidebar-border p-6 lg:fixed lg:h-screen overflow-y-auto">
       <div className="flex flex-col items-center space-y-6">
@@ -65,11 +95,12 @@ const ProfileSidebar = () => {
           <Button
             className="w-full    font-semibold shadow-lg  transition-all duration-300"
             asChild
+            onClick={handleClick}
           >
-            <a href="/Adarsh_Landge_Resume.pdf" download>
+           <span>
               <Download className="w-4 h-4 mr-2" />
               Download Resume
-            </a>
+            </span>
           </Button>
           
           <div className="space-y-2 pt-2">
