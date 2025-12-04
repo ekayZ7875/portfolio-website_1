@@ -3,21 +3,12 @@ import { GraduationCap, Calendar } from "lucide-react";
 const EducationSection = () => {
   const education = [
     {
-      degree: "B.Tech – Information Technology",
+      degree: "B.Tech",
       institution: "SGSITS Indore",
-      duration: "2022 – 2026",
-      grade: "CGPA: 8.45",
+      duration: "2023 – 2027",
       icon: GraduationCap,
       color: "from-primary to-accent"
     },
-    {
-      degree: "Class XII – CBSE",
-      institution: "St. Vincent Pallotti School",
-      duration: "2021 – 2022",
-      grade: "Percentage: 94.2%",
-      icon: GraduationCap,
-      color: "from-blue-500 to-cyan-500"
-    }
   ];
 
   return (
@@ -43,9 +34,6 @@ const EducationSection = () => {
                   <Calendar className="w-4 h-4" />
                   <span>{edu.duration}</span>
                 </div>
-                <p className="text-md font-bold text-foreground">
-                  {edu.grade}
-                </p>
               </div>
             </div>
           </div>

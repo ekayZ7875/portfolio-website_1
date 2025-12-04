@@ -19,18 +19,6 @@ const ProjectsSection = () => {
       ]
     },
     {
-      title: "ShopMe – AI-Powered E-Commerce with CI/CD",
-      url: "https://shopme-p8f2.onrender.com",
-      icon: "/ShopMe.png",
-      tech: ["MERN", "Redux Toolkit", "Material UI", "Stripe", "Redis", "Docker", "Kubernetes", "AWS EKS", "Jenkins", "ArgoCD", "Terraform", "Prometheus", "Grafana"],
-      points: [
-        "Full-stack e-commerce with product CRUD, cart, orders and Stripe payments",
-        "Recommendation engine using Scikit-learn (TF-IDF + cosine similarity) stored in MongoDB",
-        "CI/CD with Jenkins, GitHub, Docker, SonarQube, Trivy, and ArgoCD for Kubernetes deployments on AWS EKS",
-        "Infrastructure as Code using Terraform and centralized monitoring with Prometheus + Grafana"
-      ]
-    },
-    {
       title: "AntiPhishX – AI-Powered Phishing Detection System",
       url: "https://antiphishx.site",
       icon: "/antiphish.png", // put this image in /public (rename if needed)
@@ -39,6 +27,17 @@ const ProjectsSection = () => {
         "AI-powered phishing detection that analyzes both text and images using OCR + NLP",
         "AWS Rekognition extracts text from screenshots, and Comprehend performs NLP for threat analysis",
         "Custom ML model aggregates signals to classify content as Phishing or Not Phishing, deployed on EC2 with S3 + CloudFront"
+      ]
+    },
+    {
+      title: "Drift – Sacalable-Cloud Storage System",
+      url: "https://github.com/ekayZ7875/cloud-project",
+      icon: "https://res.cloudinary.com/dhy548whh/image/upload/v1764878157/Screenshot_2025-12-05_012514_dowljr.png", // put this image in /public (rename if needed)
+      tech: ["Express", "AWS EC2", "AWS S3", "CloudFront", "DynamoDB", "AWS Lambda", "AWS App Runner"],
+      points: [
+        "A scalable cloud storage system inspired by Google Drive, using Node.js, AWS S3, and DynamoDB.",
+        "Features folder organization, starred files, and trash recovery.",
+        "Deployed with Docker, EC2, and CloudFront."
       ]
     }
   ];

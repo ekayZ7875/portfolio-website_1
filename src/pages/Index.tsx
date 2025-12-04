@@ -3,7 +3,6 @@ import ProfileSidebar from "@/components/ProfileSidebar";
 import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import CloudDevOpsSection from "@/components/CloudDevOpsSection";
-import DSASection from "@/components/DSASection";
 import HackathonsSection from "@/components/HackathonsSection";
 import ExtrasSection from "@/components/ExtrasSection";
 import EducationSection from "@/components/EducationSection";
@@ -19,9 +18,7 @@ const Index = () => {
     { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
     { id: "cloud-devops", label: "Cloud & DevOps" },
-    { id: "dsa", label: "DSA" },
-    { id: "hackathons", label: "Hackathons" },
-    { id: "extras", label: "Extras" },
+    { id: "hackathons", label: "Hackathons" },                                                                                                  
     { id: "education", label: "Education" },
     { id: "contact", label: "Contact" }
   ];
@@ -65,7 +62,7 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-sidebar/95 backdrop-blur-sm border-b border-sidebar-border">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <span className="text-xl font-bold text-foreground">AL</span>
+            <span className="text-xl font-bold text-foreground">ESP</span>
             <div className="hidden lg:flex items-center gap-1">
               {sections.map((section) => (
                 <button
@@ -96,16 +93,14 @@ const Index = () => {
             <ExperienceSection />
             <ProjectsSection />
             <CloudDevOpsSection />
-            <DSASection />
             <HackathonsSection />
-            <ExtrasSection />
             <EducationSection />
             <ContactSection />
 
             {/* Footer */}
             <footer className="py-8 px-6 text-center border-t border-border text-xs">
               <p className="text-muted-foreground">
-                © 2025 Adarsh Landge. All rights reserved.
+                © 2025 Eklavya Singh Parihar. All rights reserved.
               </p>
             </footer>
           </div>

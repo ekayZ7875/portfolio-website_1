@@ -1,8 +1,8 @@
 import { Github, Linkedin, ExternalLink, Download, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const RESUME_URL = "/Adarsh_Landge_Resume.pdf";
-const TRACKING_URL = "https://so6zlrzed4bsjtn5k4vinsh5pu0ldbsz.lambda-url.us-east-1.on.aws/";
+const RESUME_URL = "/eklavya_singh_parihar_resume.pdf";
+const TRACKING_URL = "https://drive.google.com/file/d/1kk2JcBF-7B5-DpRizxuIUIcv7lVGTVXZ/view?usp=sharing";
 
 async function trackResumeDownload() {
   try {
@@ -29,7 +29,7 @@ const ProfileSidebar = () => {
     // fire & forget tracking
     trackResumeDownload();
     // trigger actual download
-    downloadFile(RESUME_URL, "Adarsh_Landge_Resume.pdf");
+    downloadFile(RESUME_URL, "eklavya_singh_parihar.pdf");
   };
 
   return (
@@ -37,14 +37,14 @@ const ProfileSidebar = () => {
       <div className="flex flex-col items-center space-y-6">
         {/* Profile Photo */}
         <div >
-          <img src="Its_Me.jpg" alt="image" className="w-32 h-32 rounded-full  flex items-center justify-center  shadow-glow-orange" />
+          <img src="https://res.cloudinary.com/dgc7xsrcx/image/upload/v1764865697/eklavya_fpjkgj.jpg" alt="image" className="w-32 h-32 rounded-full  flex items-center justify-center  shadow-glow-orange" />
         </div>
 
         {/* Name & Title */}
         <div className="text-center space-y-2">
-          <h1 className="text-2xl font-bold text-sidebar-foreground">Adarsh Landge</h1>
+          <h1 className="text-2xl font-bold text-sidebar-foreground">Eklavya Singh Parihar</h1>
           <p className="text-sm text-muted-foreground font-medium">
-            Full Stack Web & Cloud Developer
+            Backend & Cloud Developer
           </p>
           <p className="text-xs text-muted-foreground">AWS & DevOps</p>
         </div>
@@ -65,7 +65,7 @@ const ProfileSidebar = () => {
         {/* Social Links */}
         <div className="flex gap-3 pt-2">
           <a
-            href="https://linkedin.com/in/adarsh-landge"
+            href="https://www.linkedin.com/in/eklavya-singh-parihar-3464251b6/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-lg bg-secondary hover:bg-primary transition-all duration-300 hover:shadow-glow-orange"
@@ -73,20 +73,12 @@ const ProfileSidebar = () => {
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="https://github.com/adarshl02"
+            href="https://github.com/ekayZ7875"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-lg bg-secondary hover:bg-primary transition-all duration-300 hover:shadow-glow-orange"
           >
             <Github className="w-5 h-5" />
-          </a>
-          <a
-            href="https://www.upwork.com/freelancers/~019d599dacb5e73aaf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 rounded-lg bg-secondary hover:bg-primary transition-all duration-300 hover:shadow-glow-orange"
-          >
-            <ExternalLink className="w-5 h-5" />
           </a>
         </div>
 
@@ -105,18 +97,18 @@ const ProfileSidebar = () => {
           
           <div className="space-y-2 pt-2">
             <a
-              href="mailto:adarshl10604@gmail.com"
+              href="mailto:eklavyasinghparihar@gmail.com"
               className="flex items-center gap-2 text-xs text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="w-4 h-4" />
-              adarshl10604@gmail.com
+              eklavyasinghparihar@gmail.com
             </a>
             <a
-              href="tel:+919200203742"
+              href="tel:+919179941690"
               className="flex items-center gap-2 text-xs text-muted-foreground hover:text-primary transition-colors"
             >
               <Phone className="w-4 h-4" />
-              +91 9200203742
+              +91 9179941690
             </a>
           </div>
         </div>

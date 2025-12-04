@@ -4,10 +4,10 @@ const CloudDevOpsSection = () => {
   const certifications = [
     {
       title: "AWS Certified Solutions Architect – Associate",
-      date: "Nov 2025",
-      score: "801/1000",
+      date: "Aug 2025",
+      score: "774/1000",
       icon: "aws1.png",
-      url: "https://www.credly.com/badges/5455cc07-fd42-4fc3-96f5-1adfb78994b0/public_url",
+      url: "https://www.credly.com/badges/3fac86f3-c660-460b-a4e7-6420a16b5b73/public_url",
       skills: [
         "Designing highly available architectures",
         "Cost-optimized solutions with S3, RDS, Lambda",
@@ -20,7 +20,7 @@ const CloudDevOpsSection = () => {
       date: "Jun 2025",
       score: "837/1000",
       icon: "aws2.png",
-      url: "https://www.credly.com/badges/1e7a0762-a645-4ec9-992d-1272f08e0059/public_url",
+      url: "https://www.credly.com/badges/a14219cd-4d1b-4f04-a2c8-5976658f9a7d/public_url",
       skills: [
         "AWS core services and global infrastructure",
         "Billing, pricing, and cost management",
