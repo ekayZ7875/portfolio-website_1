@@ -46,7 +46,7 @@ const ProfileSidebar = () => {
           <p className="text-sm text-muted-foreground font-medium">
             Backend & Cloud Developer
           </p>
-          <p className="text-xs text-muted-foreground">AWS & DevOps</p>
+          {/* <p className="text-xs text-muted-foreground">AWS & DevOps</p> */}
         </div>
 
         {/* Bio */}
