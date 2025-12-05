@@ -59,8 +59,9 @@ export default {
         },
       },
       boxShadow: {
-        'glow-orange': '0 0 20px rgba(255, 153, 0, 0.3)',
-        'glow-orange-strong': '0 0 30px rgba(255, 153, 0, 0.5)',
+        'glow-orange': '0 0 20px rgba(255, 140, 70, 0.4)',
+        'glow-orange-strong': '0 0 30px rgba(255, 140, 70, 0.6)',
+        'glow-pink': '0 0 20px rgba(255, 100, 150, 0.3)',
       },
       borderRadius: {
         lg: "var(--radius)",

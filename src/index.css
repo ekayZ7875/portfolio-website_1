@@ -8,59 +8,60 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* AWS Dark Theme - Deep navy background with high contrast */
-    --background: 222 47% 8%;
-    --foreground: 210 40% 98%;
+    /* Sunset/Warm Theme - Dark background with orange/pink/coral accents */
+    --background: 20 30% 5%;
+    --foreground: 20 10% 98%;
 
-    /* Cards with slightly lighter shade */
-    --card: 222 40% 12%;
-    --card-foreground: 210 40% 98%;
+    /* Cards with warm dark tone */
+    --card: 20 25% 10%;
+    --card-foreground: 20 10% 98%;
 
-    --popover: 222 40% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 20 25% 10%;
+    --popover-foreground: 20 10% 98%;
 
-    /* AWS Orange as primary accent */
-    --primary: 36 100% 50%;
-    --primary-foreground: 222 47% 8%;
+    /* Warm orange as primary accent */
+    --primary: 25 85% 55%;
+    --primary-foreground: 20 30% 5%;
 
-    /* Subtle blue-grey for secondary elements */
-    --secondary: 217 20% 20%;
-    --secondary-foreground: 210 40% 98%;
+    /* Dark warm secondary */
+    --secondary: 20 20% 12%;
+    --secondary-foreground: 20 10% 98%;
 
     /* Muted elements */
-    --muted: 217 25% 18%;
-    --muted-foreground: 215 15% 65%;
+    --muted: 20 15% 15%;
+    --muted-foreground: 20 10% 65%;
 
-    /* Accent with AWS orange tint */
-    --accent: 36 80% 45%;
-    --accent-foreground: 222 47% 8%;
+    /* Pink/coral accent */
+    --accent: 350 80% 55%;
+    --accent-foreground: 20 30% 5%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 20 10% 98%;
 
-    /* Borders with subtle blue-grey */
-    --border: 217 20% 25%;
-    --input: 217 20% 25%;
-    --ring: 36 100% 50%;
+    /* Borders with warm tone */
+    --border: 20 20% 22%;
+    --input: 20 20% 22%;
+    --ring: 25 85% 55%;
 
     --radius: 0.75rem;
 
     /* Sidebar styling */
-    --sidebar-background: 222 45% 10%;
-    --sidebar-foreground: 210 40% 95%;
-    --sidebar-primary: 36 100% 50%;
-    --sidebar-primary-foreground: 222 47% 8%;
-    --sidebar-accent: 217 25% 18%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 36 100% 50%;
-    --sidebar-ring: 36 100% 50%;
+    --sidebar-background: 20 28% 8%;
+    --sidebar-foreground: 20 10% 95%;
+    --sidebar-primary: 25 85% 55%;
+    --sidebar-primary-foreground: 20 30% 5%;
+    --sidebar-accent: 20 15% 14%;
+    --sidebar-accent-foreground: 20 10% 98%;
+    --sidebar-border: 25 85% 55%;
+    --sidebar-ring: 25 85% 55%;
 
     /* Custom gradient for hero elements */
-    --gradient-aws: linear-gradient(135deg, hsl(222 47% 12%), hsl(217 25% 18%));
+    --gradient-sunset: linear-gradient(135deg, hsl(25 70% 25%), hsl(350 70% 25%));
     
     /* Glow effects */
-    --glow-orange: 0 0 20px hsla(36, 100%, 50%, 0.3);
-    --glow-orange-strong: 0 0 30px hsla(36, 100%, 50%, 0.5);
+    --glow-orange: 0 0 20px hsla(25, 85%, 55%, 0.4);
+    --glow-orange-strong: 0 0 30px hsla(25, 85%, 55%, 0.6);
+    --glow-pink: 0 0 20px hsla(350, 80%, 55%, 0.3);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -91,7 +92,7 @@ All colors MUST be HSL.
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--primary));
+    background: linear-gradient(135deg, hsl(25 85% 55%), hsl(350 80% 55%));
   }
 }
 
